@@ -28,8 +28,8 @@ public class Canvas
     public static Canvas getCanvas()
     {
         if(canvasSingleton == null) {
-            canvasSingleton = new Canvas("BlueJ Shapes Demo", 300, 300, 
-                    Color.white);
+            canvasSingleton = new Canvas("BlueJ Shapes Demo", 700, 700, 
+                    new Color(0, 217, 255));
         }
         canvasSingleton.setVisible(true);
         return canvasSingleton;
@@ -135,6 +135,14 @@ public class Canvas
             graphic.setColor(Color.magenta);
         else if(colorString.equals("white"))
             graphic.setColor(Color.white);
+        else if(colorString.equals("gray"))
+            graphic.setColor(Color.gray);
+        else if(colorString.equals("brown"))
+            graphic.setColor(new Color(87, 48, 11));
+        else if(colorString.equals("sky"))
+            graphic.setColor(new Color(0, 217, 255));
+        else if(colorString.equals("grass"))
+            graphic.setColor(new Color(30, 115, 17));
         else
             graphic.setColor(Color.black);
     }

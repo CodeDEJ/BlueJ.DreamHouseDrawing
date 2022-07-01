@@ -10,6 +10,8 @@ import java.awt.*;
 public class Square
 {
     private int size;
+    private int height;
+    private int width;
     private int xPosition;
     private int yPosition;
     private String color;
